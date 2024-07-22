@@ -10,7 +10,15 @@
     <meta name="author" content="Your Company Name">
     <style>
         .bg-river {
-            background-image: url('media/pexels-eberhardgross-20629885 2.jpg');
+            background: hsla(178, 90%, 38%, 1);
+
+            background: linear-gradient(225deg, hsla(178, 90%, 38%, 1) 0%, hsla(179, 41%, 77%, 1) 100%);
+
+            background: -moz-linear-gradient(225deg, hsla(178, 90%, 38%, 1) 0%, hsla(179, 41%, 77%, 1) 100%);
+
+            background: -webkit-linear-gradient(225deg, hsla(178, 90%, 38%, 1) 0%, hsla(179, 41%, 77%, 1) 100%);
+
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0ABAB5", endColorstr="#ADDDDC", GradientType=1 );
             background-size: cover;
             background-position: center;
         }
@@ -24,8 +32,18 @@
             background-color: #0ABAB5;
             border-radius: 50%;
             padding: 20px;
-            display: inline-block;
+            display: inline-block;  
         }
+        .tiffany {
+            background-color: #0ABAB5;
+        }
+        body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+nav {
+    z-index: 9000;
+}
     </style>
 </head>
 <body class="font-sans antialiased text-gray-900">
@@ -33,28 +51,27 @@
     <header class="bg-river h-screen flex items-center justify-center text-white">
         <nav class="fixed top-0 left-0 right-0 p-6 flex justify-between items-center bg-gray-800 text-white" aria-label="Main Navigation">
             <div class="text-xl font-bold">
-                <img src="media/logo_standin.svg" alt="Logo" class="w-20 h-10 inline-block">
+                <img src="media/logo.svg" alt="Logo" class="h-10 inline-block">
             </div>
             <ul class="flex space-x-6">
                 <li><a href="index.html#home" class="hover:underline" aria-label="Home">Home</a></li>
                 <li><a href="index.html#about" class="hover:underline" aria-label="About Us">About Us</a></li>
-                <li><a href="index.html#work" class="hover:underline" aria-label="Our Work">Our Work</a></li>
-                <li><a href="index.html#prices" class="hover:underline" aria-label="Prices">Prices</a></li>
+                <li><a href="index.html#work" class="hover:underline" aria-label="Services">Services</a></li>
                 <li><a href="civicrm.html" class="hover:underline" aria-label="CiviCRM">CiviCRM</a></li>
                 <li><a href="contact.html" class="hover:underline" aria-label="Contact">Contact</a></li>
             </ul>
         </nav>
         <div class="text-center">
-            <h1 class="text-5xl md:text-7xl font-bold">Welcome to Our Professional Site</h1>
-            <p class="mt-4 text-xl md:text-2xl">Delivering quality work every time</p>
+            <h1 class="text-5xl md:text-7xl font-bold">CiviCRM solutions for important missions</h1>
+            <p class="mt-4 text-xl md:text-2xl">I help you make the most of your CRM.</p>
         </div>
     </header>
 
     <!-- About Us Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center">About Us</h2>
-            <p class="mt-6 text-lg text-center max-w-2xl mx-auto">We are a team of professionals dedicated to providing the best service in the industry. Our mission is to deliver top-notch quality and ensure customer satisfaction.</p>
+            <h2 class="text-4xl font-bold text-center">About CiviSunshine</h2>
+            <p class="mt-6 text-lg text-center max-w-2xl mx-auto">I'm Grace! I've enjoyed working in nonprofit and tech in my career. I know how important it is for nonprofits to keep track of their donors, have great email lists, and keep in contact. CiviCRM is a free, open-source solution to handle all these needs. I can create a whole new CiviCRM setup for you, or help you meet your goals with an existing CiviCRM instillation. </p>
         </div>
     </section>
 
@@ -69,67 +86,103 @@
         </div>
     </section>
 
-    <!-- Our Work Section -->
-    <section id="work" class="py-20 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center">Our Work</h2>
-            <div class="mt-12 grid gap-8 md:grid-cols-3">
-                <!-- Card 1 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4">Project 1</h3>
-                    <p class="text-gray-600">Description of the project goes here. Highlight key features and success stories.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4">Project 2</h3>
-                    <p class="text-gray-600">Description of the project goes here. Highlight key features and success stories.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="bg-white p-6 rounded-lg shadow-lg">
-                    <h3 class="text-2xl font-bold mb-4">Project 3</h3>
-                    <p class="text-gray-600">Description of the project goes here. Highlight key features and success stories.</p>
-                </div>
-            </div>
+<!-- Our Work Section -->
+<section id="work" class="py-20 bg-gray-100">
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl lg:text-center">
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Empower your mission with integrated solutions.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">Streamline your nonprofit's operations with CiviCRM: from fundraising and event management to supporter engagement and automated communications.</p>
+          </div>
+          <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg tiffany">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 0 1-1.5 1.5H5.25a1.5 1.5 0 0 1-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 1 0 9.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1 1 14.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+                      </svg>
+                  </div>
+                  Donor Management
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  <ul class="list-disc pl-5">
+                    <li>Track donations and analyze giving patterns with ease</li>
+                    <li>Create personalized fundraising campaigns</li>
+                    <li>Build stronger relationships with supporters</li>
+                    <li>Optimize your fundraising efforts</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg tiffany">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                      </svg>
+                  </div>
+                  Event Planning and Management
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  <ul class="list-disc pl-5">
+                    <li>Seamlessly organize and promote events, from small meetings to large fundraisers</li>
+                    <li>Streamline registration and ticketing processes</li>
+                    <li>Enhance attendee communication</li>
+                    <li>Focus on creating impactful experiences</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg tiffany">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                      </svg>                                                
+                  </div>
+                  Volunteer Coordination
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  <ul class="list-disc pl-5">
+                    <li>Efficiently recruit, schedule, and manage volunteers</li>
+                    <li>Match volunteer skills with organizational needs</li>
+                    <li>Track volunteer hours</li>
+                    <li>Enhance your organization's capacity</li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="relative pl-16">
+                <dt class="text-base font-semibold leading-7 text-gray-900">
+                  <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg tiffany">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6 text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                      </svg>                          
+                  </div>
+                  Automated Communications
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">
+                  <ul class="list-disc pl-5">
+                    <li>Keep supporters engaged with targeted, timely communications</li>
+                    <li>Send personalized emails, SMS, and newsletters</li>
+                    <li>Communicate across multiple channels</li>
+                    <li>Base communications on supporter interests and interactions</li>
+                  </ul>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
-    </section>
-
-    <!-- Prices Section -->
-    <section id="prices" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center">Prices</h2>
-            <div class="mt-12 grid gap-8 md:grid-cols-3">
-                <!-- Price Card 1 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-                    <h3 class="text-2xl font-bold mb-4">Basic Plan</h3>
-                    <p class="text-4xl font-bold mb-4">$99</p>
-                    <p class="text-gray-600">Includes basic features and support.</p>
-                </div>
-                <!-- Price Card 2 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-                    <h3 class="text-2xl font-bold mb-4">Standard Plan</h3>
-                    <p class="text-4xl font-bold mb-4">$199</p>
-                    <p class="text-gray-600">Includes standard features and priority support.</p>
-                </div>
-                <!-- Price Card 3 -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-lg text-center">
-                    <h3 class="text-2xl font-bold mb-4">Premium Plan</h3>
-                    <p class="text-4xl font-bold mb-4">$299</p>
-                    <p class="text-gray-600">Includes all features and dedicated support.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+</section>
 
 <!-- Bottom Navigation -->
 <nav class="py-6 flex justify-between items-center bg-gray-800 text-white" aria-label="Bottom Navigation">
     <div class="text-xl font-bold">
-        <img src="media/logo_standin.svg" alt="Logo" class="w-20 h-10 inline-block">
+        <img src="media/logo.svg" alt="Logo" class="h-10 inline-block">
     </div>
     <ul class="flex space-x-6">
         <li><a href="index.html#home" class="hover:underline" aria-label="Home">Home</a></li>
         <li><a href="index.html#about" class="hover:underline" aria-label="About Us">About Us</a></li>
-        <li><a href="index.html#work" class="hover:underline" aria-label="Our Work">Our Work</a></li>
-        <li><a href="index.html#prices" class="hover:underline" aria-label="Prices">Prices</a></li>
+        <li><a href="index.html#work" class="hover:underline" aria-label="Services">Services</a></li>
         <li><a href="civicrm.html" class="hover:underline" aria-label="CiviCRM">CiviCRM</a></li>
         <li><a href="contact.html" class="hover:underline" aria-label="Contact">Contact</a></li>
     </ul>
